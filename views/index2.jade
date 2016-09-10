@@ -1,0 +1,203 @@
+extends layout
+
+block content
+
+    .header-main(style=" ")
+        .title
+            img(id="mylogo" src="/images/Brians_Logo.svg")
+            .info
+                .name.
+                    Brian Turloff
+                svg
+                    line(x1="0" y1="0" x2="250px" y2="0")
+                .career.
+                    Software Engineer
+        .navbar#navbar
+            ul
+                li
+                    a(href="#profile") Profile
+                li
+                    a(href="#projects") Projects
+                li
+                    a(href="#programs") Programs
+
+
+    .mybody
+        a(id="profile")
+        .heading1#profileHeading(data-spy="affix", data-offset-top="400")
+
+            img(src="/images/Brians_Logo.svg")
+            div
+
+                span PROFILE
+                .navbar#nav2
+                    ul
+                        li
+                            a(href="#profile") Profile
+                        li
+                            a(href="#projects") Projects
+                        li
+                            a(href="#programs") Programs
+            //.line
+
+        .sec1(name="profile")
+
+          div(style="width:40%; margin: auto;")
+                
+                    
+                        #aboutme.sec2.solidrow
+                            .he1 About Me
+                            .he2.
+                                My outstanding ability is developing solutions to
+                                computationally challenging problems; communicating them in written
+                                and oral form and working with teams to implement them.
+                                I would like to apply these abilities to a project that will make a
+                                positive impact on humanity.
+                    
+                        #skills.sec2.solidrow(style="")
+                            .he1() Skills
+                            .he2
+                                #icons.he2(style="")
+                                    img.skills(src="/images/skills/java.svg")
+                                    img.skills(src="/images/skills/python.png")
+                                    img.skills(src="/images/skills/csharp.png")
+                                    img.skills(src="/images/skills/cplusplus.svg")
+                                    img.skills(src="/images/skills/android.svg")
+                                    img.skills(src="/images/skills/ios.png")
+                                    img.skills(src="/images/skills/linux.png")
+                                    img.skills(src="/images/skills/nodejs.png")
+                                    img.skills(src="/images/skills/sql.svg")
+                                    img.skills(src="/images/skills/mongodb.png")
+
+                                #iconlist.he2(style="")
+                                    ul
+                                        li Python
+                                        li Java
+                                        li C#
+                                        li .NET
+                                        li C++
+                                        li SOA, SOD, SOC
+                                        li Meteor
+                                        li Node.js
+                                        li SOAP
+                                        li RESTFul
+                                        li Linux
+                                        li iOS
+                                        li Android
+                                        li MongoDB
+                                        li SQL
+                      
+                    
+                        .sec2.solidrow#education
+                            .he1 Education
+                            .he2
+                                .p1 Bachelor of Science, Computer Science
+                                ul
+                                    li.p3 Concentration in Software Engineering (expected)	Dec 2016
+                                    li.p3 Arizona State University - Ira A. Fulton School of Engineering
+                                    li.p3 3.3 GPA
+                
+                    
+                        .sec2.solidrow#experience
+                            .he1 Work Experience
+                            .he2
+                                                            
+                                .p1  American Express	
+                                .p2 Software Engineer Consultant, Phoenix, AZ
+                                .p2 Jan 2016 – Present
+                                ul
+                                    li.p3 (Node JS) Created an administrative web application to control a fleet of personal assistant robots (V-Go).  
+                                    li.p3 (Xamarin) Currently developing a recruiting iOS app for American Express recruiters to use at Career Fairs.  Collects student information and pushes the data to a Mongo DB server. 
+                                hr
+                                .p1  ACSS, L-3 Communications	
+                                .p2 Software Engineer Intern, Phoenix, AZ
+                                .p2 May 2015 – Aug 2015
+                                ul
+                                    li.p3 (Python) Part of a software development team of three people that created a software testing suite for the company’s flagship product, TCAS (Traffic Air Collision Avoidance System). The testing suite is currently being used in the production of the TCAS.
+                                    li.p3    The testing suite currently saves the company hundreds of man hours every week by discovering circuit cards that are inoperable at specific points in the production process.
+                                hr
+
+
+                                .p1 L-3 Vertex, Aerospace 	
+                                .p2 Structural Helicopter Mechanic, Afghanistan
+                                .p2 Sep 2010 – Nov 2011
+                                ul
+                                    li.p3    Lead Structural Technician in a 12 personnel maintenance team.
+                                    li.p3    Engaged in teleconferencing with remote maintenance teams to coordinate regional maintenance requests and deliver technical advice and requests to colleagues.  These teleconferences resulted in solving seemingly complex, technical problems and saving the U.S. Army over $100,000 dollars and 750 man hours.
+                                hr
+
+
+                                .p1 U.S. Army – 82nd Airborne Division 	
+                                .p2 Aircraft Structural Repairer, Fort Bragg, NC
+                                .p2 Nov 2001 – May 2009
+                                ul
+                                    li.p3    Specialized in the fabrication of metal and composite structures.
+                                    li.p3    Decorated with 9 awards for outstanding work ethic and achievement including 4 Army Commendation Medals and 5 Certificate of Achievements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        a(name="projects")
+        .heading1
+            img(src="/images/Brians_Logo.svg")
+            div
+                span PROJECTS
+            //.line
+        #projects
+            .cards
+                .projectCard(onclick="parent.open('http://www.hackerrank.com/oneinsaneride')")
+                    .title HackerRank
+                    .photo
+                        img(src="/images/hackerrank.svg")
+                    .description.p3 Check out my stats on Hacker Rank
+                .projectCard(onclick="parent.open('http://www.github.com/bturloff')")
+                    .title GitHub
+                    .photo
+                        img(src="/images/github.svg")
+                    .description.p3 Check out my projects on GitHub
+
+
+        a(name="programs")
+        .heading1
+            img(src="/images/Brians_Logo.svg")
+            div
+                span PROGRAMS
+
+        #programs.sec1
+
+
+
+
+  //.myimg
+  //  img(class="background", src="/images/background3.jpg", alt="")
+  //  h1.top.
+  //   Software
+  //  h1.bottom.
+  //    Engineer
+  //  p(style="width: 20vw").
+  //    Brian Turloff
+  //    brian.turloff@gmail.com poh yeah adfadsf
+  //    (254) 423-8536
+
+  //  embed.arrow(src="/images/right-arrow.svg", type="image/svg+xml" alt="")
+  //  //- .box1
+  //  //-   p#scroll Scroll to learn a little more about me and what I can do for you...
+  //
+  //.section(name="bio")
+  //p gravy
+  //  //- .left
+  //  //-   h2 Bio
+  //  //- .right
+  //  //-   p Hello there
+  //  //-
+  //  //-
